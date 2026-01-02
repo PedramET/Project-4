@@ -75,6 +75,13 @@ Data points with a Z-score greater than 3 were flagged as anomalies.
 
 ---
 
+## Example Visualizations
+
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/00348a0b-dce6-4318-82cd-89870dab4257" /> <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/5b8fe140-4e22-4f9d-b8cb-b5dabdf4801d" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/cbabac69-0049-4af4-a770-472bc1f238c5" /> <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/e00e0015-6d31-4827-b1d7-40bb026c8a03" />
+
+---
+
 ## Libraries Used
 - pandas
 - numpy
