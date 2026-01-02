@@ -27,8 +27,6 @@ def load_data(file_path):
 def clean_data(df):
     """Clean messy healthcare data."""
 
-    df = df.drop_duplicates()
-
     # -------------------------------
     # Visit Date cleaning
     # -------------------------------
@@ -97,6 +95,11 @@ def clean_data(df):
             .str.contains("@", na=False),
             "Email"
         ] = pd.NA
+
+    # -------------------------------
+    # Removing Duplicates row
+    # -------------------------------
+    df = df.drop_duplicates()
 
     # -------------------------------
     # Cholesterol cleaning
@@ -219,3 +222,4 @@ def main():
 # Run the program
 if __name__ == "__main__":
     main()
+
