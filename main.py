@@ -124,7 +124,7 @@ def clean_data(df):
     # -------------------------------
     # Drop rows missing critical values
     # -------------------------------
-    # df = df.dropna(subset=["Visit Date", "Cholesterol"])
+    df = df.dropna(thresh=7)
 
     print("Data cleaning complete!")
     print(df.head(15))
@@ -222,4 +222,5 @@ def main():
 # Run the program
 if __name__ == "__main__":
     main()
+
 
