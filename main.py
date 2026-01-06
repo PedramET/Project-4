@@ -137,19 +137,21 @@ def clean_data(df):
 # -------------------------------
 def visualize_data(df):
     """Create Seaborn visualizations."""
-        # Histogram
+        # Histogram Plot
     if "Cholesterol" in df.columns:  
         sns.histplot(df["Cholesterol"], kde=True)
         plt.title("Distribution of Cholesterol Levels")
         plt.xlabel("Cholesterol")
         plt.ylabel("Frequency")
         plt.show()
-
+        
+        # Box Plot
     if "Cholesterol" in df.columns and "Gender" in df.columns:
         sns.boxplot(x="Gender", y="Cholesterol", data=df)
         plt.title("Cholesterol Levels by Gender")
         plt.show()
 
+        # Line Plot
     if "Visit Date" in df.columns and "Cholesterol" in df.columns:
         sns.lineplot(x="Visit Date", y="Cholesterol", data=df)
         plt.title("Cholesterol Over Time")
@@ -157,6 +159,7 @@ def visualize_data(df):
         plt.ylabel("Cholesterol")
         plt.show()
 
+        # Scatter Plot
     if "Age" in df.columns and "Cholesterol" in df.columns:
         sns.scatterplot(
             x="Age", y="Cholesterol", data=df,
@@ -222,5 +225,6 @@ def main():
 # Run the program
 if __name__ == "__main__":
     main()
+
 
 
